@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxDemoActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ikun技能">
+    </TextView>
+    <CheckBox
+        android:id="@+id/cb_sing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唱歌">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cb_dance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳舞">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cb_rap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rap  ">
+    </CheckBox>
+    <CheckBox
+        android:id="@+id/cb_basketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="篮球">
+    </CheckBox>
+    <Button
+        android:id="@+id/btn_cb_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交">
+    </Button>
+    <TextView
+        android:id="@+id/tv_cb_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</LinearLayout>

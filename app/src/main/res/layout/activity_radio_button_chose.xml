@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonChose"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android中线性布局组件名是什么？">
+    </TextView>
+    <RadioGroup
+        android:id="@+id/rg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FrameLayout">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TableLayout">
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定">
+    </Button>
+
+
+</LinearLayout>
