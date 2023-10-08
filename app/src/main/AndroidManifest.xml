@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Chap_uint"
         tools:targetApi="31">
         <activity
+            android:name=".BirthdayDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChronometerDemoActivity"
             android:exported="false" />
         <activity
