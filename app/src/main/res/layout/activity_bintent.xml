@@ -7,6 +7,14 @@
     tools:context=".BIntentActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B页面的聊天窗口"
+        android:textSize="20dp">
+    </TextView>
     <TextView
         android:id="@+id/tv_message_show"
         android:layout_width="match_parent"
