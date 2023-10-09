@@ -32,6 +32,8 @@ android {
 }
 
 dependencies {
+
+    implementation ("com.google.code.gson:gson:2.8.5")
     implementation ("com.makeramen:roundedimageview:2.2.1")
     implementation("de.hdodenhof:circleimageview:2.2.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

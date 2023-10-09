@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.gson.Gson;
 import com.xxxy.lihang.chap_uint.model.User;
 
 public class AIntentActivity extends AppCompatActivity {
@@ -31,8 +32,8 @@ public class AIntentActivity extends AppCompatActivity {
 
                 //3.2  拿到editText的数据并 塞数据
                 User user = new User(1,12,"li","1234","赤峰");
-                //String msg = et_messageA.getText().toString();
-                intent.putExtra("message",user);
+                String msg = et_messageA.getText().toString();
+                intent.putExtra("user",new Gson().toJson(user) );
                 //3.3  startActivity
                 startActivity(intent);
             }
