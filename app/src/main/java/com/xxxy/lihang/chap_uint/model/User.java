@@ -1,6 +1,8 @@
 package com.xxxy.lihang.chap_uint.model;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     int id;
     int age;
     String username;

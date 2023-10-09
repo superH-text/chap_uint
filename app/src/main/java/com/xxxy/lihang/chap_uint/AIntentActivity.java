@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.xxxy.lihang.chap_uint.model.User;
+
 public class AIntentActivity extends AppCompatActivity {
 
     @Override
@@ -28,8 +30,9 @@ public class AIntentActivity extends AppCompatActivity {
                 Intent intent = new Intent(AIntentActivity.this,BIntentActivity.class);
 
                 //3.2  拿到editText的数据并 塞数据
-                String msg = et_messageA.getText().toString();
-                intent.putExtra("message",msg);
+                User user = new User(1,12,"li","1234","赤峰");
+                //String msg = et_messageA.getText().toString();
+                intent.putExtra("message",user);
                 //3.3  startActivity
                 startActivity(intent);
             }
