@@ -3,11 +3,11 @@ package com.xxxy.lihang.chap_uint.model;
 import java.io.Serializable;
 
 public class User implements Serializable {
-    int id;
-    int age;
-    String username;
-    String password;
-    String address;
+    private int id;
+    private int age;
+    private String username;
+    private String password;
+    private String address;
 
     public int getId() {
         return id;

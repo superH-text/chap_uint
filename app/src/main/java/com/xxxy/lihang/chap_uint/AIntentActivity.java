@@ -11,6 +11,9 @@ import android.widget.EditText;
 import com.google.gson.Gson;
 import com.xxxy.lihang.chap_uint.model.User;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class AIntentActivity extends AppCompatActivity {
 
     @Override
@@ -31,8 +34,26 @@ public class AIntentActivity extends AppCompatActivity {
                 Intent intent = new Intent(AIntentActivity.this,BIntentActivity.class);
 
                 //3.2  拿到editText的数据并 塞数据
-                User user = new User(1,12,"li","1234","赤峰");
-                String msg = et_messageA.getText().toString();
+//                User user = new User(1,12,"li","1234","赤峰");
+//                String msg = et_messageA.getText().toString();
+
+
+                ArrayList<User> list=new ArrayList<>();
+                User user=new User(1,12,"李","1234","赤峰");
+                User user1=new User(2,18,"王","4545","大连");
+
+                list.add(user);
+                list.add(user1);
+                intent.putExtra("list",new Gson().toJson(list));
+
+//HashMap
+                HashMap<Integer, String> map=new HashMap<>();
+                map.put(1,"zhangsan");
+                map.put(2,"lisi");
+                map.put(3,"wangwu");
+                intent.putExtra("map",new Gson().toJson(map));
+                startActivity(intent);
+                //
                 intent.putExtra("user",new Gson().toJson(user) );
                 //3.3  startActivity
                 startActivity(intent);
